@@ -1,15 +1,28 @@
 {
-  "schema_version": "v1",
-  "name_for_human": "WHOIS Loopup",
-  "name_for_model": "whois_lookup",
-  "description_for_human": "Query WHOIS information for an IP address or domain name, no forensics required for public interface",
-  "description_for_model": "Use the /api/whois endpoint to obtain WHOIS details of an IP or domain name based on query and type, without providing an API Key",
-  "auth": {
-    "type": "none"
+  "identifier": "whois_lookup",
+  "api": [
+    {
+      "type": "openapi",
+      "url": "https://lobechat-whois.vercel.app/openapi.json",
+      "is_user_authenticated": false
+    }
+  ],
+  "openapi": "https://lobechat-whois.vercel.app/openapi.json",
+  "author": "LobeChat Team",
+  "createAt": "2025-04-29T00:00:00Z",
+  "gateway": "https://lobechat-whois.vercel.app",
+  "homepage": "https://lobechat-whois.vercel.app",
+  "meta": {
+    "title": "WHOIS Loopup",
+    "description": "Query WHOIS information for an IP address or domain name, no forensics required for public interface",
+    "tags": [
+      "whois",
+      "lookup",
+      "network"
+    ],
+    "avatar": "🕵️‍♀️"
   },
-  "api": {
-    "type": "openapi",
-    "url": "https://lobechat-whois.vercel.app/openapi.json",
-    "is_user_authenticated": false
-  }
+  "settings": {},
+  "systemRole": "Use the /api/whois endpoint to obtain WHOIS details of an IP or domain name based on query and type, without providing an API Key",
+  "type": "default"
 }

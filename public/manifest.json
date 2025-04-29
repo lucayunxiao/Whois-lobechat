@@ -1,0 +1,15 @@
+{
+  "schema_version": "v1",
+  "name_for_human": "IP2WHOIS 查询",
+  "name_for_model": "ip2whois",
+  "description_for_human": "查询 IP 地址或域名的 WHOIS 信息，公开接口无需鉴权",
+  "description_for_model": "使用 /api/whois 接口，根据 query 和 type 获取 IP 或域名的 WHOIS 详情，无需提供 API Key",
+  "auth": {
+    "type": "none"
+  },
+  "api": {
+    "type": "openapi",
+    "url": "https://lobechat-whois.vercel.app/openapi.json",
+    "is_user_authenticated": false
+  }
+}

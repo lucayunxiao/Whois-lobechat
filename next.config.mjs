@@ -1,5 +1,17 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
+  async rewrites() {
+    return [
+      {
+        source: '/manifest.json',
+        destination: '/api/manifest',
+      },
+      {
+        source: '/openapi.json',
+        destination: '/api/openapi',
+      },
+    ];
+  },
   eslint: {
     ignoreDuringBuilds: true,
   },
@@ -9,6 +21,6 @@ const nextConfig = {
   images: {
     unoptimized: true,
   },
-}
+};
 
-export default nextConfig
+export default nextConfig;

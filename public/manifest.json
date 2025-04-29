@@ -1,14 +1,17 @@
 {
   "identifier": "whois_lookup",
-  "api": [
+  "api": 
     {
       "type": "openapi",
       "url": "https://lobechat-whois.vercel.app/openapi.json",
+      "description": "Query WHOIS information for an IP address or domain name.",
+      "name": "whois_lookup",
       "is_user_authenticated": false
-    }
-  ],
+    },
+  "name_for_human": "Whois Lookup",
+  "name_for_model": "whois_lookup",
   "openapi": "https://lobechat-whois.vercel.app/openapi.json",
-  "author": "LobeChat Team",
+  "author": "Luca Wang",
   "createAt": "2025-04-29T00:00:00Z",
   "gateway": "https://lobechat-whois.vercel.app",
   "homepage": "https://lobechat-whois.vercel.app",
@@ -22,7 +25,6 @@
     ],
     "avatar": "🕵️‍♀️"
   },
-  "settings": {},
   "systemRole": "Use the /api/whois endpoint to obtain WHOIS details of an IP or domain name based on query and type, without providing an API Key",
   "type": "default"
 }

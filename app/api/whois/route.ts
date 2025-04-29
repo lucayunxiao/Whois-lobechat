@@ -29,7 +29,7 @@ async function handleIpLookup(ip: string) {
   try {
     // Using a free IP lookup API for demonstration
     const response = await fetch(`https://ipapi.co/${ip}/json/`, {
-      headers: { "User-Agent": "IP2WHOIS-Plugin/1.0" },
+      headers: { "User-Agent": "LobeChat-WHOIS-Plugin/1.0" },
     })
 
     if (!response.ok) {
@@ -157,7 +157,7 @@ async function fetchRDAPData(domain: string) {
       signal: controller.signal,
       headers: {
         Accept: "application/rdap+json",
-        "User-Agent": "IP2WHOIS-Plugin/1.0",
+        "User-Agent": "LobeChat-WHOIS-Plugin/1.0",
       },
     }).finally(() => clearTimeout(timeoutId))
 
@@ -226,7 +226,7 @@ async function fetchWhoisJsonData(domain: string) {
       {
         signal: controller.signal,
         headers: {
-          "User-Agent": "IP2WHOIS-Plugin/1.0",
+          "User-Agent": "LobeChat-WHOIS-Plugin/1.0",
         },
       },
     ).finally(() => clearTimeout(timeoutId))
@@ -279,7 +279,7 @@ async function fetchIpWhoisDomainData(domain: string) {
     const response = await fetch(`https://ipwhois.io/json/${encodeURIComponent(domain)}?lang=en`, {
       signal: controller.signal,
       headers: {
-        "User-Agent": "IP2WHOIS-Plugin/1.0",
+        "User-Agent": "LobeChat-WHOIS-Plugin/1.0",
       },
     }).finally(() => clearTimeout(timeoutId))
 

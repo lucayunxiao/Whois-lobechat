@@ -49,7 +49,7 @@ export default function Home() {
     <main className="flex min-h-screen flex-col items-center justify-center p-4 md:p-24">
       <Card className="w-full max-w-3xl">
         <CardHeader>
-          <CardTitle>WHOIS Lookup</CardTitle>
+          <CardTitle>LobeChat WHOIS Plugin</CardTitle>
           <CardDescription>Enter an IP address or domain name to retrieve WHOIS information</CardDescription>
         </CardHeader>
         <CardContent>

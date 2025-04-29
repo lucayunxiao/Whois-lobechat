@@ -1,13 +1,13 @@
 {
   "openapi": "3.0.0",
   "info": {
-    "title": "IP2WHOIS LobeChat Plugin",
+    "title": "LobeChat WHOIS Plugin",
     "description": "A plugin for LobeChat that provides WHOIS information for IP addresses and domain names",
     "version": "1.0.0"
   },
   "servers": [
     {
-      "url": "https://your-deployment-url.vercel.app",
+      "url": "https://lobechat-whois.vercel.app",
       "description": "Production server"
     }
   ],

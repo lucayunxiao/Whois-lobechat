@@ -1,9 +1,9 @@
 {
   "schema_version": "v1",
-  "name_for_human": "IP2WHOIS 查询",
-  "name_for_model": "ip2whois",
-  "description_for_human": "查询 IP 地址或域名的 WHOIS 信息，公开接口无需鉴权",
-  "description_for_model": "使用 /api/whois 接口，根据 query 和 type 获取 IP 或域名的 WHOIS 详情，无需提供 API Key",
+  "name_for_human": "WHOIS Loopup",
+  "name_for_model": "whois_lookup",
+  "description_for_human": "Query WHOIS information for an IP address or domain name, no forensics required for public interface",
+  "description_for_model": "Use the /api/whois endpoint to obtain WHOIS details of an IP or domain name based on query and type, without providing an API Key",
   "auth": {
     "type": "none"
   },
